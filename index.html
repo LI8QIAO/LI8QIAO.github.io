@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立乔</title>
+    <!-- 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 主样式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 关于页面样式 -->
+    <link rel="stylesheet" href="css/about.css">
+    <!-- 响应式样式 -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">立乔</div>
+            <img src="images/头像.jpg" alt="头像" class="header__avatar">
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#blog">博客</a>
+            <a href="#about">关于</a>
+            <a href="#contact">联系</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- 头部区域 -->
+    <section id="home" class="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <h1>探索技术与创意的无限可能</h1>
+            <p>欢迎来到立乔的个人空间：通过代码创造价值，用文字记录成长。</p>
+            <a href="#blog" class="btn">阅读博客</a>
+        </div>
+    </section>
+
+    <!-- 博客区域 -->
+    <section id="blog" class="section">
+        <h2 class="section-title">最新文章</h2>
+        <div class="blog-grid">
+            <!-- 博客卡片 1 -->
+            <div class="blog-card">
+                <div class="card-image">
+                    <img src="images/封面1.jpeg" alt="Web开发">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">前端开发</span>
+                    <h3 class="card-title">深入理解CSS Grid布局系统</h3>
+                    <p class="card-excerpt">探索CSS Grid的强大功能，学习如何创建复杂的响应式布局，提升你的网页设计能力...</p>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar"></i> 2023年6月15日</span>
+                        <span><i class="far fa-clock"></i> 8分钟阅读</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我区域 -->
+    <section id="about" class="section about">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>我是一名计算机语言及前端开发爱好者</p>
+                <p>我热衷于探索新技术，相信持续学习和开放分享是技术成长的关键。</p>
+                <p>以下是我对各个方面兴趣程度/</p>
+                
+                <div class="skills">
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <span style="width: 90%"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <span style="width: 80%"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>C语言</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <span style="width: 80%"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>UI/UX设计</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <span style="width: 80%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="images/封面2.jpeg" alt="个人照片">
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">联系我</h2>
+        <div class="contact-form">
+            <div class="form-group">
+                <label for="name">您的称呼</label>
+                <input type="text" id="name" class="form-control" placeholder="我该怎样称呼您">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">电子邮箱</label>
+                <input type="email" id="email" class="form-control" placeholder="请输入您的电子邮箱">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">留言</label>
+                <textarea id="message" class="form-control" placeholder="请输入您的留言..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">发送消息</button>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/LI8QIAO" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://mail.qq.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/QQ邮箱.png" alt="QQ邮箱">
+            </a>
+            <a href="https://weibo.com/u/7782306046" target="_blank" rel="noopener noreferrer">
+                <img src="images/新浪微博.png" alt="新浪微博">
+            </a>
+        </div>
+        <p class="copyright">© 2025 立乔版权所有 | 设计与开发 by 立乔</p>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="js/main.js"></script>
+</body>
+<!-- 在index.html的body底部添加 -->
+<script src="js/particles.js"></script>
+</html>
